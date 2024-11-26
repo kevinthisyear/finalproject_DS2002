@@ -194,11 +194,11 @@ def clean_data(file_path, year_start, year_end):
     remaining_rows = data[data['country'].apply(not_in_category)]
 
     # Save the separated datasets
-    country_file = "country_data.csv"
-    continent_file = "continent_data.csv"
-    nations_file = "nations_data.csv"
-    socioeconomic_file = "socioeconomic_data.csv"
-    non_country_file = "non_country_data.csv"
+    country_file = "data/country_data.csv"
+    continent_file = "data/continent_data.csv"
+    nations_file = "data/nations_data.csv"
+    socioeconomic_file = "data/socioeconomic_data.csv"
+    non_country_file = "data/non_country_data.csv"
 
     country_rows.to_csv(country_file, index=False)
     continent_rows.to_csv(continent_file, index=False)
