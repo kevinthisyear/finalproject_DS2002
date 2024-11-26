@@ -20,10 +20,12 @@ YEAR_START = 1950
 YEAR_END = 2023
 
 if __name__ == "__main__":
+    # EXTRACT
     retreive_data(URL)
 
+    # TRANSFORM
     clean_data(FILEPATH_TO_RAW_DATA, YEAR_START, YEAR_END)
 
+    # LOAD
     store_data_to_cloud(uri=MONGO_URI, filepath=FILEPATH_TO_CLEAN_DATA, db_name="data", collection_name="emissions")
 
-    
