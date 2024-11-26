@@ -187,22 +187,29 @@ def clean_data(file_path, year_start, year_end):
         )
 
     # Separate rows based on whether they are valid countries
-    valid_country_rows = data[data['country'].apply(is_valid_country)]
+    country_rows = data[data['country'].apply(is_valid_country)]
     continent_rows = data[data['country'].apply(is_continent)]
     nations_rows = data[data['country'].apply(is_nations)]
     socioeconomic_rows = data[data['country'].apply(is_socioeconomic)]
-    non_country_rows = data[data['country'].apply(not_in_category)]
+    remaining_rows = data[data['country'].apply(not_in_category)]
 
     # Save the separated datasets
-    # valid_country_file = "valid_country_data.csv"
-    # non_country_file = "non_country_data.csv"
+    country_file = "country_data.csv"
+    continent_file = "continent_data.csv"
+    nations_file = "nations_data.csv"
+    socioeconomic_file = "socioeconomic_data.csv"
+    non_country_file = "non_country_data.csv"
 
-    # valid_country_rows.to_csv(valid_country_file, index=False)
-    # non_country_rows.to_csv(non_country_file, index=False)
+    country_rows.to_csv(country_file, index=False)
+    continent_rows.to_csv(continent_file, index=False)
+    nations_rows.to_csv(nations_file, index=False)
+    socioeconomic_rows.to_csv(socioeconomic_file, index=False)
+
+    # remaining_rows.to_csv(non_country_file, index=False)
 
     # print(f"\nValid country data saved to: {valid_country_file}")
     # print(f"Non-country data saved to: {non_country_file}")
 
     # 5. Report Results
     logger.info("\nSummary:")
-    logger.info(f"Valid country rows: {valid_country_rows.shape[0]}")
+    logger.info(f"Valid country rows: {country_rows.shape[0]}")
