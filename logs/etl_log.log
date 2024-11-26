@@ -1,0 +1,358 @@
+2024-11-26 01:22:54,545 - log - INFO - Retreiving data from github URL...
+2024-11-26 01:22:55,959 - log - INFO - File downloaded successfully!
+2024-11-26 01:37:28,800 - log - INFO - Retreiving data from github URL...
+2024-11-26 01:37:29,142 - log - INFO - File downloaded successfully!
+2024-11-26 01:38:05,990 - log - INFO - Retreiving data from github URL...
+2024-11-26 01:38:06,231 - log - INFO - File downloaded successfully!
+2024-11-26 01:38:49,953 - log - INFO - Retreiving data from github URL...
+2024-11-26 01:38:50,215 - log - INFO - File downloaded successfully!
+2024-11-26 01:40:02,832 - log - INFO - Retreiving data from github URL...
+2024-11-26 01:40:03,074 - log - INFO - File downloaded successfully!
+2024-11-26 01:40:15,582 - log - INFO - Retreiving data from github URL...
+2024-11-26 01:40:15,833 - log - INFO - File downloaded successfully!
+2024-11-26 01:40:15,958 - log - INFO - Initial Data Overview:
+2024-11-26 01:40:15,972 - log - INFO - None
+2024-11-26 01:40:15,977 - log - INFO - 
+Missing Values Summary:
+2024-11-26 01:40:15,977 - log - INFO - country                            0
+year                               0
+iso_code                        7929
+population                      9172
+gdp                            34940
+                               ...  
+temperature_change_from_n2o    12131
+total_ghg                      12781
+total_ghg_excluding_lucf       12955
+trade_co2                      45656
+trade_co2_share                45656
+Length: 79, dtype: int64
+2024-11-26 01:40:16,070 - log - INFO - 
+Duplicates Removed: 0 rows
+2024-11-26 01:40:16,570 - log - INFO - 
+Cleaned data saved to data/cleaned_emissions_data.csv
+2024-11-26 01:40:16,570 - log - INFO - 
+Cleaned Data Overview:
+2024-11-26 01:40:16,574 - log - INFO - None
+2024-11-26 01:40:16,579 - log - INFO - 
+Unique values in the 'country' column:
+2024-11-26 01:40:16,579 - log - INFO - ['Afghanistan' 'Africa' 'Africa (GCP)' 'Albania' 'Algeria' 'Andorra'
+ 'Angola' 'Anguilla' 'Antarctica' 'Antigua and Barbuda' 'Argentina'
+ 'Armenia' 'Aruba' 'Asia' 'Asia (GCP)' 'Asia (excl. China and India)'
+ 'Australia' 'Austria' 'Azerbaijan' 'Bahamas' 'Bahrain' 'Bangladesh'
+ 'Barbados' 'Belarus' 'Belgium' 'Belize' 'Benin' 'Bermuda' 'Bhutan'
+ 'Bolivia' 'Bonaire Sint Eustatius and Saba' 'Bosnia and Herzegovina'
+ 'Botswana' 'Brazil' 'British Virgin Islands' 'Brunei' 'Bulgaria'
+ 'Burkina Faso' 'Burundi' 'Cambodia' 'Cameroon' 'Canada' 'Cape Verde'
+ 'Central African Republic' 'Central America (GCP)' 'Chad' 'Chile' 'China'
+ 'Christmas Island' 'Colombia' 'Comoros' 'Congo' 'Cook Islands'
+ 'Costa Rica' "Cote d'Ivoire" 'Croatia' 'Cuba' 'Curacao' 'Cyprus'
+ 'Czechia' 'Democratic Republic of Congo' 'Denmark' 'Djibouti' 'Dominica'
+ 'Dominican Republic' 'East Timor' 'Ecuador' 'Egypt' 'El Salvador'
+ 'Equatorial Guinea' 'Eritrea' 'Estonia' 'Eswatini' 'Ethiopia' 'Europe'
+ 'Europe (GCP)' 'Europe (excl. EU-27)' 'Europe (excl. EU-28)'
+ 'European Union (27)' 'European Union (28)' 'Faroe Islands' 'Fiji'
+ 'Finland' 'France' 'French Polynesia' 'Gabon' 'Gambia' 'Georgia'
+ 'Germany' 'Ghana' 'Greece' 'Greenland' 'Grenada' 'Guatemala' 'Guinea'
+ 'Guinea-Bissau' 'Guyana' 'Haiti' 'High-income countries' 'Honduras'
+ 'Hong Kong' 'Hungary' 'Iceland' 'India' 'Indonesia'
+ 'International aviation' 'International shipping'
+ 'International transport' 'Iran' 'Iraq' 'Ireland' 'Israel' 'Italy'
+ 'Jamaica' 'Japan' 'Jordan' 'Kazakhstan' 'Kenya' 'Kiribati' 'Kosovo'
+ 'Kuwait' 'Kuwaiti Oil Fires' 'Kuwaiti Oil Fires (GCP)' 'Kyrgyzstan'
+ 'Laos' 'Latvia' 'Least developed countries (Jones et al.)' 'Lebanon'
+ 'Lesotho' 'Liberia' 'Libya' 'Liechtenstein' 'Lithuania'
+ 'Low-income countries' 'Lower-middle-income countries' 'Luxembourg'
+ 'Macao' 'Madagascar' 'Malawi' 'Malaysia' 'Maldives' 'Mali' 'Malta'
+ 'Marshall Islands' 'Mauritania' 'Mauritius' 'Mexico'
+ 'Micronesia (country)' 'Middle East (GCP)' 'Moldova' 'Monaco' 'Mongolia'
+ 'Montenegro' 'Montserrat' 'Morocco' 'Mozambique' 'Myanmar' 'Namibia'
+ 'Nauru' 'Nepal' 'Netherlands' 'New Caledonia' 'New Zealand' 'Nicaragua'
+ 'Niger' 'Nigeria' 'Niue' 'Non-OECD (GCP)' 'North America'
+ 'North America (GCP)' 'North America (excl. USA)' 'North Korea'
+ 'North Macedonia' 'Norway' 'OECD (GCP)' 'OECD (Jones et al.)' 'Oceania'
+ 'Oceania (GCP)' 'Oman' 'Pakistan' 'Palau' 'Palestine' 'Panama'
+ 'Papua New Guinea' 'Paraguay' 'Peru' 'Philippines' 'Poland' 'Portugal'
+ 'Qatar' 'Romania' 'Russia' 'Rwanda' 'Ryukyu Islands'
+ 'Ryukyu Islands (GCP)' 'Saint Helena' 'Saint Kitts and Nevis'
+ 'Saint Lucia' 'Saint Pierre and Miquelon'
+ 'Saint Vincent and the Grenadines' 'Samoa' 'San Marino'
+ 'Sao Tome and Principe' 'Saudi Arabia' 'Senegal' 'Serbia' 'Seychelles'
+ 'Sierra Leone' 'Singapore' 'Sint Maarten (Dutch part)' 'Slovakia'
+ 'Slovenia' 'Solomon Islands' 'Somalia' 'South Africa' 'South America'
+ 'South America (GCP)' 'South Korea' 'South Sudan' 'Spain' 'Sri Lanka'
+ 'Sudan' 'Suriname' 'Sweden' 'Switzerland' 'Syria' 'Taiwan' 'Tajikistan'
+ 'Tanzania' 'Thailand' 'Togo' 'Tonga' 'Trinidad and Tobago' 'Tunisia'
+ 'Turkey' 'Turkmenistan' 'Turks and Caicos Islands' 'Tuvalu' 'Uganda'
+ 'Ukraine' 'United Arab Emirates' 'United Kingdom' 'United States'
+ 'Upper-middle-income countries' 'Uruguay' 'Uzbekistan' 'Vanuatu'
+ 'Vatican' 'Venezuela' 'Vietnam' 'Wallis and Futuna' 'World' 'Yemen'
+ 'Zambia' 'Zimbabwe']
+2024-11-26 01:40:16,630 - log - INFO - 
+Summary:
+2024-11-26 01:40:16,630 - log - INFO - Valid country rows: 16183
+2024-11-26 02:19:35,175 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 02:19:45,418 - log - INFO - Inserted 18764 documents into emissions collection!
+2024-11-26 02:27:49,219 - log - INFO - Retreiving data from github URL...
+2024-11-26 02:27:50,673 - log - INFO - File downloaded successfully!
+2024-11-26 02:27:50,785 - log - INFO - Initial Data Overview:
+2024-11-26 02:27:50,802 - log - INFO - None
+2024-11-26 02:27:50,807 - log - INFO - 
+Missing Values Summary:
+2024-11-26 02:27:50,807 - log - INFO - country                            0
+year                               0
+iso_code                        7929
+population                      9172
+gdp                            34940
+                               ...  
+temperature_change_from_n2o    12131
+total_ghg                      12781
+total_ghg_excluding_lucf       12955
+trade_co2                      45656
+trade_co2_share                45656
+Length: 79, dtype: int64
+2024-11-26 02:27:50,894 - log - INFO - 
+Duplicates Removed: 0 rows
+2024-11-26 02:27:51,379 - log - INFO - 
+Cleaned data saved to data/cleaned_emissions_data.csv
+2024-11-26 02:27:51,379 - log - INFO - 
+Cleaned Data Overview:
+2024-11-26 02:27:51,383 - log - INFO - None
+2024-11-26 02:27:51,388 - log - INFO - 
+Unique values in the 'country' column:
+2024-11-26 02:27:51,389 - log - INFO - ['Afghanistan' 'Africa' 'Africa (GCP)' 'Albania' 'Algeria' 'Andorra'
+ 'Angola' 'Anguilla' 'Antarctica' 'Antigua and Barbuda' 'Argentina'
+ 'Armenia' 'Aruba' 'Asia' 'Asia (GCP)' 'Asia (excl. China and India)'
+ 'Australia' 'Austria' 'Azerbaijan' 'Bahamas' 'Bahrain' 'Bangladesh'
+ 'Barbados' 'Belarus' 'Belgium' 'Belize' 'Benin' 'Bermuda' 'Bhutan'
+ 'Bolivia' 'Bonaire Sint Eustatius and Saba' 'Bosnia and Herzegovina'
+ 'Botswana' 'Brazil' 'British Virgin Islands' 'Brunei' 'Bulgaria'
+ 'Burkina Faso' 'Burundi' 'Cambodia' 'Cameroon' 'Canada' 'Cape Verde'
+ 'Central African Republic' 'Central America (GCP)' 'Chad' 'Chile' 'China'
+ 'Christmas Island' 'Colombia' 'Comoros' 'Congo' 'Cook Islands'
+ 'Costa Rica' "Cote d'Ivoire" 'Croatia' 'Cuba' 'Curacao' 'Cyprus'
+ 'Czechia' 'Democratic Republic of Congo' 'Denmark' 'Djibouti' 'Dominica'
+ 'Dominican Republic' 'East Timor' 'Ecuador' 'Egypt' 'El Salvador'
+ 'Equatorial Guinea' 'Eritrea' 'Estonia' 'Eswatini' 'Ethiopia' 'Europe'
+ 'Europe (GCP)' 'Europe (excl. EU-27)' 'Europe (excl. EU-28)'
+ 'European Union (27)' 'European Union (28)' 'Faroe Islands' 'Fiji'
+ 'Finland' 'France' 'French Polynesia' 'Gabon' 'Gambia' 'Georgia'
+ 'Germany' 'Ghana' 'Greece' 'Greenland' 'Grenada' 'Guatemala' 'Guinea'
+ 'Guinea-Bissau' 'Guyana' 'Haiti' 'High-income countries' 'Honduras'
+ 'Hong Kong' 'Hungary' 'Iceland' 'India' 'Indonesia'
+ 'International aviation' 'International shipping'
+ 'International transport' 'Iran' 'Iraq' 'Ireland' 'Israel' 'Italy'
+ 'Jamaica' 'Japan' 'Jordan' 'Kazakhstan' 'Kenya' 'Kiribati' 'Kosovo'
+ 'Kuwait' 'Kuwaiti Oil Fires' 'Kuwaiti Oil Fires (GCP)' 'Kyrgyzstan'
+ 'Laos' 'Latvia' 'Least developed countries (Jones et al.)' 'Lebanon'
+ 'Lesotho' 'Liberia' 'Libya' 'Liechtenstein' 'Lithuania'
+ 'Low-income countries' 'Lower-middle-income countries' 'Luxembourg'
+ 'Macao' 'Madagascar' 'Malawi' 'Malaysia' 'Maldives' 'Mali' 'Malta'
+ 'Marshall Islands' 'Mauritania' 'Mauritius' 'Mexico'
+ 'Micronesia (country)' 'Middle East (GCP)' 'Moldova' 'Monaco' 'Mongolia'
+ 'Montenegro' 'Montserrat' 'Morocco' 'Mozambique' 'Myanmar' 'Namibia'
+ 'Nauru' 'Nepal' 'Netherlands' 'New Caledonia' 'New Zealand' 'Nicaragua'
+ 'Niger' 'Nigeria' 'Niue' 'Non-OECD (GCP)' 'North America'
+ 'North America (GCP)' 'North America (excl. USA)' 'North Korea'
+ 'North Macedonia' 'Norway' 'OECD (GCP)' 'OECD (Jones et al.)' 'Oceania'
+ 'Oceania (GCP)' 'Oman' 'Pakistan' 'Palau' 'Palestine' 'Panama'
+ 'Papua New Guinea' 'Paraguay' 'Peru' 'Philippines' 'Poland' 'Portugal'
+ 'Qatar' 'Romania' 'Russia' 'Rwanda' 'Ryukyu Islands'
+ 'Ryukyu Islands (GCP)' 'Saint Helena' 'Saint Kitts and Nevis'
+ 'Saint Lucia' 'Saint Pierre and Miquelon'
+ 'Saint Vincent and the Grenadines' 'Samoa' 'San Marino'
+ 'Sao Tome and Principe' 'Saudi Arabia' 'Senegal' 'Serbia' 'Seychelles'
+ 'Sierra Leone' 'Singapore' 'Sint Maarten (Dutch part)' 'Slovakia'
+ 'Slovenia' 'Solomon Islands' 'Somalia' 'South Africa' 'South America'
+ 'South America (GCP)' 'South Korea' 'South Sudan' 'Spain' 'Sri Lanka'
+ 'Sudan' 'Suriname' 'Sweden' 'Switzerland' 'Syria' 'Taiwan' 'Tajikistan'
+ 'Tanzania' 'Thailand' 'Togo' 'Tonga' 'Trinidad and Tobago' 'Tunisia'
+ 'Turkey' 'Turkmenistan' 'Turks and Caicos Islands' 'Tuvalu' 'Uganda'
+ 'Ukraine' 'United Arab Emirates' 'United Kingdom' 'United States'
+ 'Upper-middle-income countries' 'Uruguay' 'Uzbekistan' 'Vanuatu'
+ 'Vatican' 'Venezuela' 'Vietnam' 'Wallis and Futuna' 'World' 'Yemen'
+ 'Zambia' 'Zimbabwe']
+2024-11-26 02:27:51,439 - log - INFO - 
+Summary:
+2024-11-26 02:27:51,439 - log - INFO - Valid country rows: 16183
+2024-11-26 02:27:52,022 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 02:28:05,341 - log - INFO - Inserted 18764 documents into emissions collection!
+2024-11-26 02:33:47,782 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 02:35:48,393 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 02:36:52,570 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 03:00:54,036 - log - INFO - Retreiving data from github URL...
+2024-11-26 03:00:54,348 - log - INFO - File downloaded successfully!
+2024-11-26 03:00:54,456 - log - INFO - Initial Data Overview:
+2024-11-26 03:00:54,471 - log - INFO - None
+2024-11-26 03:00:54,480 - log - INFO - 
+Missing Values Summary:
+2024-11-26 03:00:54,480 - log - INFO - country                            0
+year                               0
+iso_code                        7929
+population                      9172
+gdp                            34940
+                               ...  
+temperature_change_from_n2o    12131
+total_ghg                      12781
+total_ghg_excluding_lucf       12955
+trade_co2                      45656
+trade_co2_share                45656
+Length: 79, dtype: int64
+2024-11-26 03:00:54,601 - log - INFO - 
+Duplicates Removed: 0 rows
+2024-11-26 03:00:55,119 - log - INFO - 
+Cleaned data saved to data/cleaned_emissions_data.csv
+2024-11-26 03:00:55,119 - log - INFO - 
+Cleaned Data Overview:
+2024-11-26 03:00:55,124 - log - INFO - None
+2024-11-26 03:00:55,128 - log - INFO - 
+Unique values in the 'country' column:
+2024-11-26 03:00:55,128 - log - INFO - ['Afghanistan' 'Africa' 'Africa (GCP)' 'Albania' 'Algeria' 'Andorra'
+ 'Angola' 'Anguilla' 'Antarctica' 'Antigua and Barbuda' 'Argentina'
+ 'Armenia' 'Aruba' 'Asia' 'Asia (GCP)' 'Asia (excl. China and India)'
+ 'Australia' 'Austria' 'Azerbaijan' 'Bahamas' 'Bahrain' 'Bangladesh'
+ 'Barbados' 'Belarus' 'Belgium' 'Belize' 'Benin' 'Bermuda' 'Bhutan'
+ 'Bolivia' 'Bonaire Sint Eustatius and Saba' 'Bosnia and Herzegovina'
+ 'Botswana' 'Brazil' 'British Virgin Islands' 'Brunei' 'Bulgaria'
+ 'Burkina Faso' 'Burundi' 'Cambodia' 'Cameroon' 'Canada' 'Cape Verde'
+ 'Central African Republic' 'Central America (GCP)' 'Chad' 'Chile' 'China'
+ 'Christmas Island' 'Colombia' 'Comoros' 'Congo' 'Cook Islands'
+ 'Costa Rica' "Cote d'Ivoire" 'Croatia' 'Cuba' 'Curacao' 'Cyprus'
+ 'Czechia' 'Democratic Republic of Congo' 'Denmark' 'Djibouti' 'Dominica'
+ 'Dominican Republic' 'East Timor' 'Ecuador' 'Egypt' 'El Salvador'
+ 'Equatorial Guinea' 'Eritrea' 'Estonia' 'Eswatini' 'Ethiopia' 'Europe'
+ 'Europe (GCP)' 'Europe (excl. EU-27)' 'Europe (excl. EU-28)'
+ 'European Union (27)' 'European Union (28)' 'Faroe Islands' 'Fiji'
+ 'Finland' 'France' 'French Polynesia' 'Gabon' 'Gambia' 'Georgia'
+ 'Germany' 'Ghana' 'Greece' 'Greenland' 'Grenada' 'Guatemala' 'Guinea'
+ 'Guinea-Bissau' 'Guyana' 'Haiti' 'High-income countries' 'Honduras'
+ 'Hong Kong' 'Hungary' 'Iceland' 'India' 'Indonesia'
+ 'International aviation' 'International shipping'
+ 'International transport' 'Iran' 'Iraq' 'Ireland' 'Israel' 'Italy'
+ 'Jamaica' 'Japan' 'Jordan' 'Kazakhstan' 'Kenya' 'Kiribati' 'Kosovo'
+ 'Kuwait' 'Kuwaiti Oil Fires' 'Kuwaiti Oil Fires (GCP)' 'Kyrgyzstan'
+ 'Laos' 'Latvia' 'Least developed countries (Jones et al.)' 'Lebanon'
+ 'Lesotho' 'Liberia' 'Libya' 'Liechtenstein' 'Lithuania'
+ 'Low-income countries' 'Lower-middle-income countries' 'Luxembourg'
+ 'Macao' 'Madagascar' 'Malawi' 'Malaysia' 'Maldives' 'Mali' 'Malta'
+ 'Marshall Islands' 'Mauritania' 'Mauritius' 'Mexico'
+ 'Micronesia (country)' 'Middle East (GCP)' 'Moldova' 'Monaco' 'Mongolia'
+ 'Montenegro' 'Montserrat' 'Morocco' 'Mozambique' 'Myanmar' 'Namibia'
+ 'Nauru' 'Nepal' 'Netherlands' 'New Caledonia' 'New Zealand' 'Nicaragua'
+ 'Niger' 'Nigeria' 'Niue' 'Non-OECD (GCP)' 'North America'
+ 'North America (GCP)' 'North America (excl. USA)' 'North Korea'
+ 'North Macedonia' 'Norway' 'OECD (GCP)' 'OECD (Jones et al.)' 'Oceania'
+ 'Oceania (GCP)' 'Oman' 'Pakistan' 'Palau' 'Palestine' 'Panama'
+ 'Papua New Guinea' 'Paraguay' 'Peru' 'Philippines' 'Poland' 'Portugal'
+ 'Qatar' 'Romania' 'Russia' 'Rwanda' 'Ryukyu Islands'
+ 'Ryukyu Islands (GCP)' 'Saint Helena' 'Saint Kitts and Nevis'
+ 'Saint Lucia' 'Saint Pierre and Miquelon'
+ 'Saint Vincent and the Grenadines' 'Samoa' 'San Marino'
+ 'Sao Tome and Principe' 'Saudi Arabia' 'Senegal' 'Serbia' 'Seychelles'
+ 'Sierra Leone' 'Singapore' 'Sint Maarten (Dutch part)' 'Slovakia'
+ 'Slovenia' 'Solomon Islands' 'Somalia' 'South Africa' 'South America'
+ 'South America (GCP)' 'South Korea' 'South Sudan' 'Spain' 'Sri Lanka'
+ 'Sudan' 'Suriname' 'Sweden' 'Switzerland' 'Syria' 'Taiwan' 'Tajikistan'
+ 'Tanzania' 'Thailand' 'Togo' 'Tonga' 'Trinidad and Tobago' 'Tunisia'
+ 'Turkey' 'Turkmenistan' 'Turks and Caicos Islands' 'Tuvalu' 'Uganda'
+ 'Ukraine' 'United Arab Emirates' 'United Kingdom' 'United States'
+ 'Upper-middle-income countries' 'Uruguay' 'Uzbekistan' 'Vanuatu'
+ 'Vatican' 'Venezuela' 'Vietnam' 'Wallis and Futuna' 'World' 'Yemen'
+ 'Zambia' 'Zimbabwe']
+2024-11-26 03:00:55,675 - log - INFO - 
+Summary:
+2024-11-26 03:00:55,675 - log - INFO - Valid country rows: 16183
+2024-11-26 03:00:56,252 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 03:01:06,775 - log - INFO - Inserted 18764 documents into emissions collection!
+2024-11-26 03:01:06,855 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 03:01:51,349 - log - INFO - Retreiving data from github URL...
+2024-11-26 03:01:52,609 - log - INFO - File downloaded successfully!
+2024-11-26 03:01:52,741 - log - INFO - Initial Data Overview:
+2024-11-26 03:01:52,753 - log - INFO - None
+2024-11-26 03:01:52,758 - log - INFO - 
+Missing Values Summary:
+2024-11-26 03:01:52,758 - log - INFO - country                            0
+year                               0
+iso_code                        7929
+population                      9172
+gdp                            34940
+                               ...  
+temperature_change_from_n2o    12131
+total_ghg                      12781
+total_ghg_excluding_lucf       12955
+trade_co2                      45656
+trade_co2_share                45656
+Length: 79, dtype: int64
+2024-11-26 03:01:52,858 - log - INFO - 
+Duplicates Removed: 0 rows
+2024-11-26 03:01:53,360 - log - INFO - 
+Cleaned data saved to data/cleaned_emissions_data.csv
+2024-11-26 03:01:53,360 - log - INFO - 
+Cleaned Data Overview:
+2024-11-26 03:01:53,365 - log - INFO - None
+2024-11-26 03:01:53,369 - log - INFO - 
+Unique values in the 'country' column:
+2024-11-26 03:01:53,369 - log - INFO - ['Afghanistan' 'Africa' 'Africa (GCP)' 'Albania' 'Algeria' 'Andorra'
+ 'Angola' 'Anguilla' 'Antarctica' 'Antigua and Barbuda' 'Argentina'
+ 'Armenia' 'Aruba' 'Asia' 'Asia (GCP)' 'Asia (excl. China and India)'
+ 'Australia' 'Austria' 'Azerbaijan' 'Bahamas' 'Bahrain' 'Bangladesh'
+ 'Barbados' 'Belarus' 'Belgium' 'Belize' 'Benin' 'Bermuda' 'Bhutan'
+ 'Bolivia' 'Bonaire Sint Eustatius and Saba' 'Bosnia and Herzegovina'
+ 'Botswana' 'Brazil' 'British Virgin Islands' 'Brunei' 'Bulgaria'
+ 'Burkina Faso' 'Burundi' 'Cambodia' 'Cameroon' 'Canada' 'Cape Verde'
+ 'Central African Republic' 'Central America (GCP)' 'Chad' 'Chile' 'China'
+ 'Christmas Island' 'Colombia' 'Comoros' 'Congo' 'Cook Islands'
+ 'Costa Rica' "Cote d'Ivoire" 'Croatia' 'Cuba' 'Curacao' 'Cyprus'
+ 'Czechia' 'Democratic Republic of Congo' 'Denmark' 'Djibouti' 'Dominica'
+ 'Dominican Republic' 'East Timor' 'Ecuador' 'Egypt' 'El Salvador'
+ 'Equatorial Guinea' 'Eritrea' 'Estonia' 'Eswatini' 'Ethiopia' 'Europe'
+ 'Europe (GCP)' 'Europe (excl. EU-27)' 'Europe (excl. EU-28)'
+ 'European Union (27)' 'European Union (28)' 'Faroe Islands' 'Fiji'
+ 'Finland' 'France' 'French Polynesia' 'Gabon' 'Gambia' 'Georgia'
+ 'Germany' 'Ghana' 'Greece' 'Greenland' 'Grenada' 'Guatemala' 'Guinea'
+ 'Guinea-Bissau' 'Guyana' 'Haiti' 'High-income countries' 'Honduras'
+ 'Hong Kong' 'Hungary' 'Iceland' 'India' 'Indonesia'
+ 'International aviation' 'International shipping'
+ 'International transport' 'Iran' 'Iraq' 'Ireland' 'Israel' 'Italy'
+ 'Jamaica' 'Japan' 'Jordan' 'Kazakhstan' 'Kenya' 'Kiribati' 'Kosovo'
+ 'Kuwait' 'Kuwaiti Oil Fires' 'Kuwaiti Oil Fires (GCP)' 'Kyrgyzstan'
+ 'Laos' 'Latvia' 'Least developed countries (Jones et al.)' 'Lebanon'
+ 'Lesotho' 'Liberia' 'Libya' 'Liechtenstein' 'Lithuania'
+ 'Low-income countries' 'Lower-middle-income countries' 'Luxembourg'
+ 'Macao' 'Madagascar' 'Malawi' 'Malaysia' 'Maldives' 'Mali' 'Malta'
+ 'Marshall Islands' 'Mauritania' 'Mauritius' 'Mexico'
+ 'Micronesia (country)' 'Middle East (GCP)' 'Moldova' 'Monaco' 'Mongolia'
+ 'Montenegro' 'Montserrat' 'Morocco' 'Mozambique' 'Myanmar' 'Namibia'
+ 'Nauru' 'Nepal' 'Netherlands' 'New Caledonia' 'New Zealand' 'Nicaragua'
+ 'Niger' 'Nigeria' 'Niue' 'Non-OECD (GCP)' 'North America'
+ 'North America (GCP)' 'North America (excl. USA)' 'North Korea'
+ 'North Macedonia' 'Norway' 'OECD (GCP)' 'OECD (Jones et al.)' 'Oceania'
+ 'Oceania (GCP)' 'Oman' 'Pakistan' 'Palau' 'Palestine' 'Panama'
+ 'Papua New Guinea' 'Paraguay' 'Peru' 'Philippines' 'Poland' 'Portugal'
+ 'Qatar' 'Romania' 'Russia' 'Rwanda' 'Ryukyu Islands'
+ 'Ryukyu Islands (GCP)' 'Saint Helena' 'Saint Kitts and Nevis'
+ 'Saint Lucia' 'Saint Pierre and Miquelon'
+ 'Saint Vincent and the Grenadines' 'Samoa' 'San Marino'
+ 'Sao Tome and Principe' 'Saudi Arabia' 'Senegal' 'Serbia' 'Seychelles'
+ 'Sierra Leone' 'Singapore' 'Sint Maarten (Dutch part)' 'Slovakia'
+ 'Slovenia' 'Solomon Islands' 'Somalia' 'South Africa' 'South America'
+ 'South America (GCP)' 'South Korea' 'South Sudan' 'Spain' 'Sri Lanka'
+ 'Sudan' 'Suriname' 'Sweden' 'Switzerland' 'Syria' 'Taiwan' 'Tajikistan'
+ 'Tanzania' 'Thailand' 'Togo' 'Tonga' 'Trinidad and Tobago' 'Tunisia'
+ 'Turkey' 'Turkmenistan' 'Turks and Caicos Islands' 'Tuvalu' 'Uganda'
+ 'Ukraine' 'United Arab Emirates' 'United Kingdom' 'United States'
+ 'Upper-middle-income countries' 'Uruguay' 'Uzbekistan' 'Vanuatu'
+ 'Vatican' 'Venezuela' 'Vietnam' 'Wallis and Futuna' 'World' 'Yemen'
+ 'Zambia' 'Zimbabwe']
+2024-11-26 03:01:53,920 - log - INFO - 
+Summary:
+2024-11-26 03:01:53,920 - log - INFO - Valid country rows: 16183
+2024-11-26 03:01:54,386 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 03:02:04,692 - log - INFO - Inserted 18764 documents into emissions collection!
+2024-11-26 03:02:04,749 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 03:02:14,719 - log - INFO - Inserted 16183 documents into country_data collection!
+2024-11-26 03:02:14,785 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 03:02:17,765 - log - INFO - Inserted 1480 documents into continent_data collection!
+2024-11-26 03:02:17,810 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 03:02:20,768 - log - INFO - Inserted 731 documents into nations_data collection!
+2024-11-26 03:02:20,810 - log - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-11-26 03:02:22,714 - log - INFO - Inserted 370 documents into socioeconomic_data collection!
