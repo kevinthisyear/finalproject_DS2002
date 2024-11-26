@@ -5,9 +5,7 @@ import pandas as pd
 
 logger = setup_logger()
 
-def store_data_to_cloud(uri, filepath, db_name, collection_name):
-    # Create a new client and connect to the server
-    client = MongoClient(uri, server_api=ServerApi('1'))
+def store_data_to_cloud(client, filepath, db_name, collection_name):
     # Send a ping to confirm a successful connection
     try:
         client.admin.command('ping')
