@@ -1,14 +1,18 @@
 import requests
 
-# URL of the raw CSV file
-url = "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv"
+from logger_setup import setup_logger
 
-# Send a GET request to the URL
-response = requests.get(url)
+# Get the shared logger
+logger = setup_logger()
 
-if response.status_code == 200:
-    with open("raw_data/owid-co2-data.csv", "wb") as file:
-        file.write(response.content)
-    print("File downloaded successfully!")
-else:
-    print(f"Failed to download file. Status code: {response.status_code}")
+def retreive_data(url):
+    # Send a GET request to the URL
+    logger.info("Retreiving data from github URL...")
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        with open("raw_data/owid-co2-data.csv", "wb") as file:
+            file.write(response.content)
+        logger.info("File downloaded successfully!")
+    else:
+        logger.error(f"Failed to download file. Status code: {response.status_code}")
