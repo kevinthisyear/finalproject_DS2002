@@ -4,6 +4,8 @@ from retrieve_data import retreive_data
 from clean_data import clean_data
 from access_cloud import store_data_to_cloud
 from dotenv import load_dotenv
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
 
 load_dotenv()
 
@@ -27,5 +29,13 @@ if __name__ == "__main__":
     clean_data(FILEPATH_TO_RAW_DATA, YEAR_START, YEAR_END)
 
     # LOAD
-    store_data_to_cloud(uri=MONGO_URI, filepath=FILEPATH_TO_CLEAN_DATA, db_name="data", collection_name="emissions")
+    # Create a new client and connect to the server
+    client = MongoClient(MONGO_URI, server_api=ServerApi('1'))
+    store_data_to_cloud(client=client, filepath=FILEPATH_TO_CLEAN_DATA, db_name="data", collection_name="emissions")
+    store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "data", "country_data.csv"), db_name="data", collection_name="country_data")
+    store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "data", "continent_data.csv"), db_name="data", collection_name="continent_data")
+    store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "data", "nations_data.csv"), db_name="data", collection_name="nations_data")
+    store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "data", "socioeconomic_data.csv"), db_name="data", collection_name="socioeconomic_data")
+    
+
 
