@@ -16,7 +16,7 @@ def setup_logger(name="log", log_file="logs/etl_log.log", level=logging.INFO):
     """
     logger = logging.getLogger(name)
     
-    # Prevent duplicate log entries if logger is already configured
+    # prevent duplicate log entries if logger is already configured
     if logger.handlers:
         return logger
 

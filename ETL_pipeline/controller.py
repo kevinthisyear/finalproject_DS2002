@@ -9,11 +9,7 @@ from pymongo.server_api import ServerApi
 
 load_dotenv()
 
-# Get environment variables
 MONGO_URI = os.getenv('MONGO_URI')
-MONGO_USERNAME = os.getenv('MONGO_USERNAME')
-MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')
-
 URL = "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv"
 CODEBOOK_URL = "https://raw.githubusercontent.com/owid/co2-data/refs/heads/master/owid-co2-codebook.csv"
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -25,8 +21,6 @@ YEAR_END = 2023
 if __name__ == "__main__":
     # EXTRACT
     retreive_data(URL)
-    
-    # Generate the codebook
     output_markdown_file = "raw_data/codebook.md"
     generate_codebook_md(CODEBOOK_URL, output_markdown_file)
 
@@ -34,7 +28,6 @@ if __name__ == "__main__":
     clean_data(FILEPATH_TO_RAW_DATA, YEAR_START, YEAR_END)
 
     # LOAD
-    # Create a new client and connect to the server
     client = MongoClient(MONGO_URI, server_api=ServerApi('1'))
     store_data_to_cloud(client=client, filepath=FILEPATH_TO_CLEAN_DATA, db_name="data", collection_name="emissions")
     store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "data", "country_data.csv"), db_name="data", collection_name="country_data")

@@ -7,7 +7,7 @@ import pandas as pd
 logger = setup_logger()
 
 def retreive_data(url):
-    # Send a GET request to the URL
+    # send a GET request to the url
     logger.info("Retreiving data from github URL...")
     response = requests.get(url)
 
@@ -20,7 +20,7 @@ def retreive_data(url):
 
 
 def generate_codebook_md(url, output_file):
-    # Read the CSV file from the URL
+    # eead the CSV file from the url
     response = requests.get(url)
     if response.status_code == 200:
         with open("raw_data/owid-co2-codebook.csv", "wb") as file:
@@ -35,18 +35,18 @@ def generate_codebook_md(url, output_file):
         logger.error(f"Error reading CSV file: {e}")
         return
     
-    # Validate that required columns exist
+    # ensure required columns exist
     required_columns = ["column", "description", "unit", "source"]
     if not all(col in data.columns for col in required_columns):
         logger.warning(f"Missing required columns. Expected: {required_columns}")
         return
 
-    # Create the Markdown content
+    # create Markdown content
     with open(output_file, "w") as md_file:
         md_file.write("# Codebook\n\n")
         md_file.write("This codebook describes the columns, their descriptions, units, and sources.\n\n")
 
-        # Iterate over each row and write its content
+        # iterate over each row and write its content
         for _, row in data.iterrows():
             md_file.write(f"## {row['column']}\n")
             md_file.write(f"- **Description**: {row['description']}\n")
