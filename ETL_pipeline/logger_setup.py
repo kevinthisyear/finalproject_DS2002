@@ -1,6 +1,5 @@
 import logging
 import logging.handlers
-import os
 
 def setup_logger(name="log", log_file="logs/etl_log.log", level=logging.INFO):
     """

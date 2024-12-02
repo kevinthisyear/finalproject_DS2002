@@ -1,4 +1,3 @@
-from logger_setup import setup_logger
 import os
 from retrieve_data import retreive_data, generate_codebook_md
 from clean_data import clean_data
