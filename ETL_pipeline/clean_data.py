@@ -25,7 +25,7 @@ def clean_data(file_path, year_start, year_end):
 
     # Handle missing numerical values (exclude `gdp` and `co2`)
     numerical_cols = data.select_dtypes(include=[np.number]).columns
-    excluded_cols = ['gdp', 'co2']
+    excluded_cols = ['gdp', 'co2', 'population', 'year']
     numerical_cols_to_fill = [col for col in numerical_cols if col not in excluded_cols]
     for col in numerical_cols_to_fill:
         data[col] = data[col].fillna(data[col].median())
