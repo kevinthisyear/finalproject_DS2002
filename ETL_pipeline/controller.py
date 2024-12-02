@@ -39,7 +39,6 @@ if __name__ == "__main__":
     store_data_to_cloud(client=client, filepath=FILEPATH_TO_CLEAN_DATA, db_name="data", collection_name="emissions")
     store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "data", "country_data.csv"), db_name="data", collection_name="country_data")
     store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "data", "continent_data.csv"), db_name="data", collection_name="continent_data")
-    store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "data", "nations_data.csv"), db_name="data", collection_name="nations_data")
     store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "data", "socioeconomic_data.csv"), db_name="data", collection_name="socioeconomic_data")
     store_data_to_cloud(client=client, filepath=os.path.join(os.path.dirname(script_dir), "raw_data", "owid-co2-codebook.csv"), db_name="data", collection_name="codebook")
     
